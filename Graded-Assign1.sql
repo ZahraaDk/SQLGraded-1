@@ -220,7 +220,7 @@ WHERE CUSTOMERS_RENTED_HORROR.customer_id is NULL
 -- Part 11:
 SELECT DISTINCT
 	CONCAT(se_customer.first_name, ' ', se_customer.last_name) as Customer_name,
-	se_customer.email,
+	se_customer.email
 FROM public.customer as se_customer
 INNER JOIN rental as se_rental
 	ON se_rental.customer_id = se_customer.customer_id
